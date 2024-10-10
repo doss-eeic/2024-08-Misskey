@@ -267,8 +267,18 @@ export class NoteCreateService implements OnApplicationShutdown {
 			pollChoices: data.poll?.choices,
 		}, this.meta.prohibitedWords);
 
+		const hasINMWords = this.checkINMWordsContain({
+			cw: data.cw,
+			text: data.text,
+			pollChoices: data.poll?.choices,
+		}, ["やりますねぇ", "やりませんねぇ"]);
+
 		if (hasProhibitedWords) {
 			throw new IdentifiableError('689ee33f-f97c-479a-ac49-1b9f8140af99', 'Note contains prohibited words');
+		}
+
+		if (hasINMWords) {
+			throw new IdentifiableError('114514-1919-810-364364', ' 淫夢知ってそうだから淫夢のリストにぶち込んでやるぜ');
 		}
 
 		const inSilencedInstance = this.utilityService.isSilencedHost(this.meta.silencedHosts, user.host);
@@ -1023,6 +1033,23 @@ export class NoteCreateService implements OnApplicationShutdown {
 			this.utilityService.isKeyWordIncluded(
 				this.utilityService.concatNoteContentsForKeyWordCheck(content),
 				prohibitedWords,
+			)
+		) {
+			return true;
+		}
+
+		return false;
+	}
+
+	public checkINMWordsContain(content: Parameters<UtilityService['concatNoteContentsForKeyWordCheck']>[0], iNMWords?: string[]) {
+		if (iNMWords == null) {
+			iNMWords = [];
+		}
+
+		if (
+			this.utilityService.isKeyWordIncluded(
+				this.utilityService.concatNoteContentsForKeyWordCheck(content),
+				iNMWords,
 			)
 		) {
 			return true;
