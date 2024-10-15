@@ -278,7 +278,7 @@ export class NoteCreateService implements OnApplicationShutdown {
 		}
 
 		if (hasINMWords) {
-			throw new IdentifiableError('114514-1919-810-364364', ' 淫夢知ってそうだから淫夢のリストにぶち込んでやるぜ');
+			throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');
 		}
 
 		const inSilencedInstance = this.utilityService.isSilencedHost(this.meta.silencedHosts, user.host);
