@@ -125,6 +125,12 @@ export const meta = {
 			id: 'aa6e01d3-a85c-669d-758a-76aab43af334',
 		},
 
+		containsINMWords: {
+			message: 'Cannot post because it contains INM words.',
+			code: 'CONTAINS_INM_WORDS',
+			id: '1145141919810',
+		},
+
 		containsTooManyMentions: {
 			message: 'Cannot post because it exceeds the allowed number of mentions.',
 			code: 'CONTAINS_TOO_MANY_MENTIONS',

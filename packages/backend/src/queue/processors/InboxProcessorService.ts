@@ -227,6 +227,9 @@ export class InboxProcessorService implements OnApplicationShutdown {
 				if (e.id === 'd450b8a9-48e4-4dab-ae36-f4db763fda7c') { // invalid Note
 					return e.message;
 				}
+				if (e.id === '114514-1919-810-364364') {
+					return 'detected INM addict';
+				}
 			}
 			throw e;
 		}
