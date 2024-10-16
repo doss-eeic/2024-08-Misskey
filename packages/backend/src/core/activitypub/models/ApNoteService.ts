@@ -188,6 +188,10 @@ export class ApNoteService {
 			throw new IdentifiableError('689ee33f-f97c-479a-ac49-1b9f8140af99', 'Note contains prohibited words');
 		}
 		//#endregion
+		const hasINMWords = this.noteCreateService.checkINMWordsContain({ cw, text, pollChoices: poll?.choices });
+		if (hasINMWords) {
+			throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');
+		}
 
 		const actor = cachedActor ?? await this.apPersonService.resolvePerson(uri, resolver) as MiRemoteUser;
 

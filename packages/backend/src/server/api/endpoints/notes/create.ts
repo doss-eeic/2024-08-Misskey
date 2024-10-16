@@ -397,8 +397,12 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 				// TODO: 他のErrorもここでキャッチしてエラーメッセージを当てるようにしたい
 				if (e instanceof IdentifiableError) {
 					if (e.id === '689ee33f-f97c-479a-ac49-1b9f8140af99') {
-						throw new ApiError(meta.errors.	containsProhibitedWords);
-					} else if (e.id === '9f466dab-c856-48cd-9e65-ff90ff750580') {
+						throw new ApiError(meta.errors.containsProhibitedWords);
+					} 
+					else if (e.id === '114514-1919-810-364364'){
+						throw new ApiError(meta.errors.containsINMWords);
+					}
+					else if (e.id === '9f466dab-c856-48cd-9e65-ff90ff750580') {
 						throw new ApiError(meta.errors.containsTooManyMentions);
 					}
 				}
