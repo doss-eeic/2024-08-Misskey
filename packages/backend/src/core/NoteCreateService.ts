@@ -18,7 +18,8 @@ import type { MiDriveFile } from '@/models/DriveFile.js';
 import type { MiApp } from '@/models/App.js';
 import { concat } from '@/misc/prelude/array.js';
 import { IdService } from '@/core/IdService.js';
-import type { MiUser, MiLocalUser, MiRemoteUser } from '@/models/User.js';
+import { MiUser, MiRemoteUser } from '@/models/User.js';
+import type {MiLocalUser} from '@/models/User.js';
 import type { IPoll } from '@/models/Poll.js';
 import { MiPoll } from '@/models/Poll.js';
 import { isDuplicateKeyValueError } from '@/misc/is-duplicate-key-value-error.js';
@@ -56,6 +57,10 @@ import { isReply } from '@/misc/is-reply.js';
 import { trackPromise } from '@/misc/promise-tracker.js';
 import { IdentifiableError } from '@/misc/identifiable-error.js';
 import { CollapsedQueue } from '@/misc/collapsed-queue.js';
+import { UserSuspendService } from '@/core/UserSuspendService.js';
+import type {FollowRequestsRepository} from '@/models/_.js';
+import { Endpoint } from '@/server/api/endpoint-base.js';
+import { truncate } from 'node:fs';
 
 type NotificationType = 'reply' | 'renote' | 'quote' | 'mention';
 
@@ -272,13 +277,15 @@ export class NoteCreateService implements OnApplicationShutdown {
 			text: data.text,
 			pollChoices: data.poll?.choices,
 		}, ["やりますねぇ", "やりませんねぇ"]);
-
 		if (hasProhibitedWords) {
 			throw new IdentifiableError('689ee33f-f97c-479a-ac49-1b9f8140af99', 'Note contains prohibited words');
 		}
 
 		if (hasINMWords) {
-			throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');
+			this.usersRepository.update(user.id, {
+				isSuspended:true,
+			});
+			throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');	
 		}
 
 		const inSilencedInstance = this.utilityService.isSilencedHost(this.meta.silencedHosts, user.host);
