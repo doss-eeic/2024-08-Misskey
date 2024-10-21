@@ -47,8 +47,8 @@ importers:
         version: 5.6.2
     optionalDependencies:
       '@tensorflow/tfjs-core':
-        specifier: 4.4.0
-        version: 4.4.0(encoding@0.1.13)
+        specifier: 4.21.0
+        version: 4.21.0(encoding@0.1.13)
     devDependencies:
       '@misskey-dev/eslint-plugin':
         specifier: 2.0.3
@@ -322,7 +322,7 @@ importers:
         version: 6.9.15
       nsfwjs:
         specifier: 2.4.2
-        version: 2.4.2(@tensorflow/tfjs@4.4.0(encoding@0.1.13)(seedrandom@3.0.5))
+        version: 2.4.2(@tensorflow/tfjs@4.21.0(encoding@0.1.13)(seedrandom@3.0.5))
       oauth:
         specifier: 0.10.0
         version: 0.10.0
@@ -478,11 +478,11 @@ importers:
         specifier: 1.3.56
         version: 1.3.56
       '@tensorflow/tfjs':
-        specifier: 4.4.0
-        version: 4.4.0(encoding@0.1.13)(seedrandom@3.0.5)
+        specifier: 4.21.0
+        version: 4.21.0(encoding@0.1.13)(seedrandom@3.0.5)
       '@tensorflow/tfjs-node':
-        specifier: 4.4.0
-        version: 4.4.0(encoding@0.1.13)(seedrandom@3.0.5)
+        specifier: 4.21.0
+        version: 4.21.0(encoding@0.1.13)(seedrandom@3.0.5)
       bufferutil:
         specifier: 4.0.7
         version: 4.0.7
@@ -729,7 +729,7 @@ importers:
         version: 3.5.11
       aiscript-vscode:
         specifier: github:aiscript-dev/aiscript-vscode#v0.1.11
-        version: https://codeload.github.com/aiscript-dev/aiscript-vscode/tar.gz/e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9
+        version: git+https://git@github.com:aiscript-dev/aiscript-vscode.git#e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9
       astring:
         specifier: 1.9.0
         version: 1.9.0
@@ -1027,7 +1027,7 @@ importers:
         version: 8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       storybook-addon-misskey-theme:
         specifier: github:misskey-dev/storybook-addon-misskey-theme
-        version: https://codeload.github.com/misskey-dev/storybook-addon-misskey-theme/tar.gz/cf583db098365b2ccc81a82f63ca9c93bc32b640(@storybook/blocks@8.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/components@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/core-events@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/manager-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/preview-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/theming@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/types@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: git+https://git@github.com:misskey-dev/storybook-addon-misskey-theme.git#cf583db098365b2ccc81a82f63ca9c93bc32b640(@storybook/blocks@8.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/components@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/core-events@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/manager-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/preview-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/theming@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/types@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       vite-plugin-turbosnap:
         specifier: 1.0.3
         version: 1.0.3
@@ -2713,8 +2713,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/plugin-kit@0.2.0':
-    resolution: {integrity: sha512-vH9PiIMMwvhCx31Af3HiGzsVNULDbyVkHXwlemn/B0TFj/00ho3y55efXrUZTfQipxoHC5u4xq6zblww1zm1Ig==}
+  '@eslint/plugin-kit@0.2.1':
+    resolution: {integrity: sha512-HFZ4Mp26nbWk9d/BpvP0YNL6W4UoZF0VFcTw/aPPA8RpOxeFQgK+ClABGgAUXs9Y/RGX/l1vOmrqz1MQt9MNuw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@fastify/accept-negotiator@2.0.0':
@@ -4478,44 +4478,44 @@ packages:
   '@tabler/icons@3.3.0':
     resolution: {integrity: sha512-PLVe9d7b59sKytbx00KgeGhQG3N176Ezv8YMmsnSz4s0ifDzMWlp/h2wEfQZ0ZNe8e377GY2OW6kovUe3Rnd0g==}
 
-  '@tensorflow/tfjs-backend-cpu@4.4.0':
-    resolution: {integrity: sha512-d4eln500/qNym78z9IrUUzF0ITBoJGLrxV8xd92kLVoXhg35Mm+zqUXShjFcrH8joOHOFuST0qZ0TbDDqcPzPA==}
+  '@tensorflow/tfjs-backend-cpu@4.21.0':
+    resolution: {integrity: sha512-yS9Oisg4L48N7ML6677ilv1eP5Jt59S74skSU1cCsM4yBAtH4DAn9b89/JtqBISh6JadanfX26b4HCWQvMvqFg==}
     engines: {yarn: '>= 1.3.2'}
     peerDependencies:
-      '@tensorflow/tfjs-core': 4.4.0
+      '@tensorflow/tfjs-core': 4.21.0
 
-  '@tensorflow/tfjs-backend-webgl@4.4.0':
-    resolution: {integrity: sha512-TzQKvfAPgGt9cMG+5bVoTckoG1xr/PVJM/uODkPvzcMqi3j97kuWDXwkYJIgXldStmfiKkU7f5CmyD3Cq3E6BA==}
+  '@tensorflow/tfjs-backend-webgl@4.21.0':
+    resolution: {integrity: sha512-7k6mb7dd0uF9jI51iunF3rhEXjvR/a613kjWZ0Rj3o1COFrneyku2C7cRMZERWPhbgXZ+dF+j9MdpGIpgtShIQ==}
     engines: {yarn: '>= 1.3.2'}
     peerDependencies:
-      '@tensorflow/tfjs-core': 4.4.0
+      '@tensorflow/tfjs-core': 4.21.0
 
-  '@tensorflow/tfjs-converter@4.4.0':
-    resolution: {integrity: sha512-JUjpRStrAuw37tgPd5UENu0UjQVuJT09yF7KpOur4BriJ0uQqrbEZHMPHmvUtr5nYzkqlXJTuXIyxvEY/olNpg==}
+  '@tensorflow/tfjs-converter@4.21.0':
+    resolution: {integrity: sha512-cUhU+F1lGx2qnKk/gRy8odBh0PZlFz0Dl71TG8LVnj0/g352DqiNrKXlKO/po9aWzP8x0KUGC3gNMSMJW+T0DA==}
     peerDependencies:
-      '@tensorflow/tfjs-core': 4.4.0
+      '@tensorflow/tfjs-core': 4.21.0
 
-  '@tensorflow/tfjs-core@4.4.0':
-    resolution: {integrity: sha512-Anxpc7cAOA0Q7EUXdTbQKMg3reFvrdkgDlaYzH9ZfkMq2CgLV4Au6E/s6HmbYn/VrAtWy9mLY5c/lLJqh4764g==}
+  '@tensorflow/tfjs-core@4.21.0':
+    resolution: {integrity: sha512-ZbECwXps5wb9XXcGq4ZXvZDVjr5okc3I0+i/vU6bpQ+nVApyIrMiyEudP8f6vracVTvNmnlN62vUXoEsQb2F8g==}
     engines: {yarn: '>= 1.3.2'}
 
-  '@tensorflow/tfjs-data@4.4.0':
-    resolution: {integrity: sha512-aY4eq4cgrsrXeBU6ABZAAN3tV0fG4YcHd0z+cYuNXnCo+VEQLJnPmhn+xymZ4VQZQH4GXbVS4dV9pXMclFNRFw==}
+  '@tensorflow/tfjs-data@4.21.0':
+    resolution: {integrity: sha512-LpJ/vyQMwYHkcVCqIRg7IVVw13VBY7rNAiuhmKP9S5NP/2ye4KA8BJ4XwDIDgjCVQM7glK9L8bMav++xCDf7xA==}
     peerDependencies:
-      '@tensorflow/tfjs-core': 4.4.0
+      '@tensorflow/tfjs-core': 4.21.0
       seedrandom: ^3.0.5
 
-  '@tensorflow/tfjs-layers@4.4.0':
-    resolution: {integrity: sha512-OGC7shfiD9Gc698hINHK4y9slOJvu5m54tVNm4xf+WSNrw/avvgpar6yyoL5bakYIZNQvFNK75Yr8VRPR7oPeQ==}
+  '@tensorflow/tfjs-layers@4.21.0':
+    resolution: {integrity: sha512-a8KaMYlY3+llvE9079nvASKpaaf8xpCMdOjbgn+eGhdOGOcY7QuFUkd/2odvnXDG8fK/jffE1LoNOlfYoBHC4w==}
     peerDependencies:
-      '@tensorflow/tfjs-core': 4.4.0
+      '@tensorflow/tfjs-core': 4.21.0
 
-  '@tensorflow/tfjs-node@4.4.0':
-    resolution: {integrity: sha512-+JSAddsupjSQUDZeb7QGOFkL3Tty3kjPHx8ethiYFzwTZJHCMvM7wZJd0Fqnjxym6A0KpsmB7SPZgwRRXVIlPA==}
+  '@tensorflow/tfjs-node@4.21.0':
+    resolution: {integrity: sha512-Vnc+x/xr9LgGEADlVwFr0xTtfOIug5E9LTRWXNE3WANLisJz9g0qycrMPiJhk4hrvr2wg8BkJKLOMfroxKwZ1w==}
     engines: {node: '>=8.11.0'}
 
-  '@tensorflow/tfjs@4.4.0':
-    resolution: {integrity: sha512-EmCsnzdvawyk4b+4JKaLLuicHcJQRZtL1zSy9AWJLiiHTbDDseYgLxfaCEfLk8v2bUe7SBXwl3n3B7OjgvH11Q==}
+  '@tensorflow/tfjs@4.21.0':
+    resolution: {integrity: sha512-7D/+H150ptvt+POMbsME3WlIvLiuBR2rCC2Z0hOKKb/5Ygkj7xsp/K2HzOvUj0g0yjk+utkU45QEYhnhjnbHRA==}
     hasBin: true
 
   '@testing-library/dom@10.4.0':
@@ -4788,8 +4788,8 @@ packages:
   '@types/offscreencanvas@2019.3.0':
     resolution: {integrity: sha512-esIJx9bQg+QYF0ra8GnvfianIY8qWB0GBx54PK5Eps6m+xTj86KLavHv6qDhzKcu5UUOgNfJ2pWaIIV7TRUd9Q==}
 
-  '@types/offscreencanvas@2019.7.0':
-    resolution: {integrity: sha512-PGcyveRIpL1XIqK8eBsmRBt76eFgtzuPiSTyKHZxnGemp2yzGzWpjYKAfK3wIMiU7eH+851yEpiuP8JZerTmWg==}
+  '@types/offscreencanvas@2019.7.3':
+    resolution: {integrity: sha512-ieXiYmgSRXUDeOntE1InxjWyvEelZGP63M+cGuquuRLuIKKT1osnkXjxev9B7d1nXSug5vpunx+gNlbVxMlC9A==}
 
   '@types/pg-pool@2.0.4':
     resolution: {integrity: sha512-qZAvkv1K3QbmHHFYSNRYPkRjOWRLBYrL4B9c+wG0GSVGBw0NtJwPcgx/DSddeDJvRGMHCEQ4VMEVfuJ/0gZ3XQ==}
@@ -4913,9 +4913,6 @@ packages:
 
   '@types/web-push@3.6.3':
     resolution: {integrity: sha512-v3oT4mMJsHeJ/rraliZ+7TbZtr5bQQuxcgD7C3/1q/zkAj29c8RE0F9lVZVu3hiQe5Z9fYcBreV7TLnfKR+4mg==}
-
-  '@types/webgl-ext@0.0.30':
-    resolution: {integrity: sha512-LKVgNmBxN0BbljJrVUwkxwRYqzsAEPcZOe6S2T6ZaBDIrFp0qu4FNlpc5sM1tGbXUYFgdVQIoeLk1Y1UoblyEg==}
 
   '@types/wrap-ansi@3.0.0':
     resolution: {integrity: sha512-ltIpx+kM7g/MLRZfkbL7EsCEjfzCcScLpkg37eXEtx5kmrAKBkTJwd1GIAjDSL8wTpM6Hzn5YO4pSb91BEwu1g==}
@@ -5209,8 +5206,8 @@ packages:
       '@vue/server-renderer':
         optional: true
 
-  '@webgpu/types@0.1.30':
-    resolution: {integrity: sha512-9AXJSmL3MzY8ZL//JjudA//q+2kBRGhLBFpkdGksWIuxrMy81nFrCzj2Am+mbh8WoU6rXmv7cY5E3rdlyru2Qg==}
+  '@webgpu/types@0.1.38':
+    resolution: {integrity: sha512-7LrhVKz2PRh+DD7+S+PVaFd5HxaWQvoMqBbsV9fNJO1pjUs1P8bM2vQVNfk+3URTqbuTI7gkXi0rfsN0IadoBA==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -5287,8 +5284,8 @@ packages:
     resolution: {integrity: sha512-gOsf2YwSlleG6IjRYG2A7k0HmBMEo6qVNk9Bp/EaLgAJT5ngH6PXbqa4ItvnEwCm/velL5jAnQgsHsWnjhGmvw==}
     engines: {node: '>=18'}
 
-  aiscript-vscode@https://codeload.github.com/aiscript-dev/aiscript-vscode/tar.gz/e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9:
-    resolution: {tarball: https://codeload.github.com/aiscript-dev/aiscript-vscode/tar.gz/e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9}
+  aiscript-vscode@git+https://git@github.com:aiscript-dev/aiscript-vscode.git#e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9:
+    resolution: {commit: e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9, repo: git@github.com:aiscript-dev/aiscript-vscode.git, type: git}
     version: 0.1.11
     engines: {vscode: ^1.83.0}
 
@@ -5870,9 +5867,6 @@ packages:
   chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
-
-  chownr@1.1.4:
-    resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
 
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -7153,9 +7147,6 @@ packages:
   fs-extra@9.1.0:
     resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
     engines: {node: '>=10'}
-
-  fs-minipass@1.2.7:
-    resolution: {integrity: sha512-GWSSJGFy4e9GUeCcbIkED+bgAoFyj7XF1mV8rma3QW4NIqX9Kyx79N/PF61H5udOV3aY1IaMLs6pGbH71nlCTA==}
 
   fs-minipass@2.1.0:
     resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==}
@@ -8760,9 +8751,6 @@ packages:
     resolution: {integrity: sha512-MbkQQ2CTiBMlA2Dm/5cY+9SWFEN8pzzOXi6rlM5Xxq0Yqbda5ZQy9sU75a673FE9ZK0Zsbr6Y5iP6u9nktfg2g==}
     engines: {node: '>=8'}
 
-  minipass@2.9.0:
-    resolution: {integrity: sha512-wxfUjg9WebH+CUDX/CdbRlh5SmfZiy/hpkxaRI16Y9W56Pa75sWgd/rvFilSgrauD9NyFymP/+JFV3KwzIsJeg==}
-
   minipass@3.3.6:
     resolution: {integrity: sha512-DxiNidxSEK+tHG6zOIklvNOwm3hvCrbUrdtzY74U6HKTJxvIDfOUL5W5P2Ghd3DTkhhKPYGqeNUIh5qcM4YBfw==}
     engines: {node: '>=8'}
@@ -8778,9 +8766,6 @@ packages:
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
-
-  minizlib@1.3.3:
-    resolution: {integrity: sha512-6ZYMOEnmVsdCeTJVE0W9ZD+pVnE8h9Hma/iOwwRDsdQoePpoX56/8B6z3P9VNwppJuBKNRuFDRNRqRWexT9G9Q==}
 
   minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
@@ -10601,8 +10586,8 @@ packages:
     resolution: {integrity: sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==}
     engines: {node: '>= 0.4'}
 
-  storybook-addon-misskey-theme@https://codeload.github.com/misskey-dev/storybook-addon-misskey-theme/tar.gz/cf583db098365b2ccc81a82f63ca9c93bc32b640:
-    resolution: {tarball: https://codeload.github.com/misskey-dev/storybook-addon-misskey-theme/tar.gz/cf583db098365b2ccc81a82f63ca9c93bc32b640}
+  storybook-addon-misskey-theme@git+https://git@github.com:misskey-dev/storybook-addon-misskey-theme.git#cf583db098365b2ccc81a82f63ca9c93bc32b640:
+    resolution: {commit: cf583db098365b2ccc81a82f63ca9c93bc32b640, repo: git@github.com:misskey-dev/storybook-addon-misskey-theme.git, type: git}
     version: 0.0.0
     peerDependencies:
       '@storybook/blocks': ^7.0.0-rc.4
@@ -10806,10 +10791,6 @@ packages:
 
   tar-stream@3.1.6:
     resolution: {integrity: sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==}
-
-  tar@4.4.19:
-    resolution: {integrity: sha512-a20gEsvHnWe0ygBY8JbxoM4w3SJdhc7ZAuxkLqh+nvNQN2IOt0B5lLgM490X5Hl8FF0dl0tOf2ewFYAlIFgzVA==}
-    engines: {node: '>=4.5'}
 
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
@@ -13176,7 +13157,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@eslint/plugin-kit@0.2.0':
+  '@eslint/plugin-kit@0.2.1':
     dependencies:
       levn: 0.4.1
 
@@ -13663,7 +13644,7 @@ snapshots:
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
-      semver: 7.6.0
+      semver: 7.6.3
       tar: 6.2.1
     transitivePeerDependencies:
       - encoding
@@ -15386,41 +15367,39 @@ snapshots:
 
   '@tabler/icons@3.3.0': {}
 
-  '@tensorflow/tfjs-backend-cpu@4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))':
+  '@tensorflow/tfjs-backend-cpu@4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))':
     dependencies:
-      '@tensorflow/tfjs-core': 4.4.0(encoding@0.1.13)
+      '@tensorflow/tfjs-core': 4.21.0(encoding@0.1.13)
       '@types/seedrandom': 2.4.34
       seedrandom: 3.0.5
 
-  '@tensorflow/tfjs-backend-webgl@4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))':
+  '@tensorflow/tfjs-backend-webgl@4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))':
     dependencies:
-      '@tensorflow/tfjs-backend-cpu': 4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))
-      '@tensorflow/tfjs-core': 4.4.0(encoding@0.1.13)
+      '@tensorflow/tfjs-backend-cpu': 4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))
+      '@tensorflow/tfjs-core': 4.21.0(encoding@0.1.13)
       '@types/offscreencanvas': 2019.3.0
       '@types/seedrandom': 2.4.34
-      '@types/webgl-ext': 0.0.30
       seedrandom: 3.0.5
 
-  '@tensorflow/tfjs-converter@4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))':
+  '@tensorflow/tfjs-converter@4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))':
     dependencies:
-      '@tensorflow/tfjs-core': 4.4.0(encoding@0.1.13)
+      '@tensorflow/tfjs-core': 4.21.0(encoding@0.1.13)
 
-  '@tensorflow/tfjs-core@4.4.0(encoding@0.1.13)':
+  '@tensorflow/tfjs-core@4.21.0(encoding@0.1.13)':
     dependencies:
       '@types/long': 4.0.2
-      '@types/offscreencanvas': 2019.7.0
+      '@types/offscreencanvas': 2019.7.3
       '@types/seedrandom': 2.4.34
-      '@types/webgl-ext': 0.0.30
-      '@webgpu/types': 0.1.30
+      '@webgpu/types': 0.1.38
       long: 4.0.0
       node-fetch: 2.6.13(encoding@0.1.13)
       seedrandom: 3.0.5
     transitivePeerDependencies:
       - encoding
 
-  '@tensorflow/tfjs-data@4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))(encoding@0.1.13)(seedrandom@3.0.5)':
+  '@tensorflow/tfjs-data@4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))(encoding@0.1.13)(seedrandom@3.0.5)':
     dependencies:
-      '@tensorflow/tfjs-core': 4.4.0(encoding@0.1.13)
+      '@tensorflow/tfjs-core': 4.21.0(encoding@0.1.13)
       '@types/node-fetch': 2.6.11
       node-fetch: 2.6.13(encoding@0.1.13)
       seedrandom: 3.0.5
@@ -15428,34 +15407,34 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@tensorflow/tfjs-layers@4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))':
+  '@tensorflow/tfjs-layers@4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))':
     dependencies:
-      '@tensorflow/tfjs-core': 4.4.0(encoding@0.1.13)
+      '@tensorflow/tfjs-core': 4.21.0(encoding@0.1.13)
 
-  '@tensorflow/tfjs-node@4.4.0(encoding@0.1.13)(seedrandom@3.0.5)':
+  '@tensorflow/tfjs-node@4.21.0(encoding@0.1.13)(seedrandom@3.0.5)':
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.9(encoding@0.1.13)
-      '@tensorflow/tfjs': 4.4.0(encoding@0.1.13)(seedrandom@3.0.5)
+      '@tensorflow/tfjs': 4.21.0(encoding@0.1.13)(seedrandom@3.0.5)
       adm-zip: 0.5.10
       google-protobuf: 3.21.2
       https-proxy-agent: 2.2.4
       progress: 2.0.3
       rimraf: 2.7.1
-      tar: 4.4.19
+      tar: 6.2.1
     transitivePeerDependencies:
       - encoding
       - seedrandom
       - supports-color
     optional: true
 
-  '@tensorflow/tfjs@4.4.0(encoding@0.1.13)(seedrandom@3.0.5)':
+  '@tensorflow/tfjs@4.21.0(encoding@0.1.13)(seedrandom@3.0.5)':
     dependencies:
-      '@tensorflow/tfjs-backend-cpu': 4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))
-      '@tensorflow/tfjs-backend-webgl': 4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))
-      '@tensorflow/tfjs-converter': 4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))
-      '@tensorflow/tfjs-core': 4.4.0(encoding@0.1.13)
-      '@tensorflow/tfjs-data': 4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))(encoding@0.1.13)(seedrandom@3.0.5)
-      '@tensorflow/tfjs-layers': 4.4.0(@tensorflow/tfjs-core@4.4.0(encoding@0.1.13))
+      '@tensorflow/tfjs-backend-cpu': 4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))
+      '@tensorflow/tfjs-backend-webgl': 4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))
+      '@tensorflow/tfjs-converter': 4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))
+      '@tensorflow/tfjs-core': 4.21.0(encoding@0.1.13)
+      '@tensorflow/tfjs-data': 4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))(encoding@0.1.13)(seedrandom@3.0.5)
+      '@tensorflow/tfjs-layers': 4.21.0(@tensorflow/tfjs-core@4.21.0(encoding@0.1.13))
       argparse: 1.0.10
       chalk: 4.1.2
       core-js: 3.29.1
@@ -15774,7 +15753,7 @@ snapshots:
 
   '@types/offscreencanvas@2019.3.0': {}
 
-  '@types/offscreencanvas@2019.7.0': {}
+  '@types/offscreencanvas@2019.7.3': {}
 
   '@types/pg-pool@2.0.4':
     dependencies:
@@ -15889,8 +15868,6 @@ snapshots:
     dependencies:
       '@types/node': 20.14.12
 
-  '@types/webgl-ext@0.0.30': {}
-
   '@types/wrap-ansi@3.0.0': {}
 
   '@types/ws@8.5.12':
@@ -16001,7 +15978,7 @@ snapshots:
       '@typescript-eslint/types': 7.17.0
       '@typescript-eslint/typescript-estree': 7.17.0(typescript@5.5.4)
       '@typescript-eslint/visitor-keys': 7.17.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.11.0
     optionalDependencies:
       typescript: 5.5.4
@@ -16014,7 +15991,7 @@ snapshots:
       '@typescript-eslint/types': 7.17.0
       '@typescript-eslint/typescript-estree': 7.17.0(typescript@5.6.2)
       '@typescript-eslint/visitor-keys': 7.17.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.11.0
     optionalDependencies:
       typescript: 5.6.2
@@ -16027,7 +16004,7 @@ snapshots:
       '@typescript-eslint/types': 7.17.0
       '@typescript-eslint/typescript-estree': 7.17.0(typescript@5.6.2)
       '@typescript-eslint/visitor-keys': 7.17.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.8.0
     optionalDependencies:
       typescript: 5.6.2
@@ -16048,7 +16025,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 7.1.0(typescript@5.3.3)
       '@typescript-eslint/utils': 7.1.0(eslint@9.11.0)(typescript@5.3.3)
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.11.0
       ts-api-utils: 1.0.1(typescript@5.3.3)
     optionalDependencies:
@@ -16060,7 +16037,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 7.17.0(typescript@5.5.4)
       '@typescript-eslint/utils': 7.17.0(eslint@9.11.0)(typescript@5.5.4)
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.11.0
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
@@ -16072,7 +16049,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 7.17.0(typescript@5.6.2)
       '@typescript-eslint/utils': 7.17.0(eslint@9.11.0)(typescript@5.6.2)
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.11.0
       ts-api-utils: 1.3.0(typescript@5.6.2)
     optionalDependencies:
@@ -16084,7 +16061,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 7.17.0(typescript@5.6.2)
       '@typescript-eslint/utils': 7.17.0(eslint@9.8.0)(typescript@5.6.2)
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.8.0
       ts-api-utils: 1.3.0(typescript@5.6.2)
     optionalDependencies:
@@ -16100,7 +16077,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 7.1.0
       '@typescript-eslint/visitor-keys': 7.1.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
@@ -16115,7 +16092,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 7.17.0
       '@typescript-eslint/visitor-keys': 7.17.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.4
@@ -16130,7 +16107,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 7.17.0
       '@typescript-eslint/visitor-keys': 7.17.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.4
@@ -16214,7 +16191,7 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
       istanbul-lib-source-maps: 5.0.4
@@ -16233,7 +16210,7 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
       istanbul-lib-source-maps: 5.0.4
@@ -16495,7 +16472,7 @@ snapshots:
     optionalDependencies:
       '@vue/server-renderer': 3.5.11(vue@3.5.11(typescript@5.6.2))
 
-  '@webgpu/types@0.1.30': {}
+  '@webgpu/types@0.1.38': {}
 
   abbrev@1.1.1: {}
 
@@ -16554,7 +16531,7 @@ snapshots:
 
   agent-base@7.1.0:
     dependencies:
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -16568,7 +16545,7 @@ snapshots:
       clean-stack: 5.2.0
       indent-string: 5.0.0
 
-  aiscript-vscode@https://codeload.github.com/aiscript-dev/aiscript-vscode/tar.gz/e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9:
+  aiscript-vscode@git+https://git@github.com:aiscript-dev/aiscript-vscode.git#e1e1b27f2f72cd28a473e004b6da0d8fc0bd40d9:
     dependencies:
       '@aiscript-dev/aiscript-languageserver': https://github.com/aiscript-dev/aiscript-languageserver/releases/download/0.1.6/aiscript-dev-aiscript-languageserver-0.1.6.tgz
       vscode-languageclient: 9.0.1
@@ -16931,7 +16908,7 @@ snapshots:
   bin-version-check@5.0.0:
     dependencies:
       bin-version: 6.0.0
-      semver: 7.6.0
+      semver: 7.6.3
       semver-truncate: 2.0.0
 
   bin-version@6.0.0:
@@ -17296,9 +17273,6 @@ snapshots:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
-
-  chownr@1.1.4:
-    optional: true
 
   chownr@2.0.0: {}
 
@@ -18559,7 +18533,7 @@ snapshots:
       '@eslint/config-array': 0.18.0
       '@eslint/eslintrc': 3.1.0
       '@eslint/js': 9.11.0
-      '@eslint/plugin-kit': 0.2.0
+      '@eslint/plugin-kit': 0.2.1
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.3.1
       '@nodelib/fs.walk': 1.2.8
@@ -19111,11 +19085,6 @@ snapshots:
       jsonfile: 6.1.0
       universalify: 2.0.0
 
-  fs-minipass@1.2.7:
-    dependencies:
-      minipass: 2.9.0
-    optional: true
-
   fs-minipass@2.1.0:
     dependencies:
       minipass: 3.3.6
@@ -19539,7 +19508,7 @@ snapshots:
   http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -19578,7 +19547,7 @@ snapshots:
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -19586,14 +19555,14 @@ snapshots:
   https-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.5:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -19968,7 +19937,7 @@ snapshots:
   istanbul-lib-source-maps@5.0.4:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       istanbul-lib-coverage: 3.2.2
     transitivePeerDependencies:
       - supports-color
@@ -20262,7 +20231,7 @@ snapshots:
       jest-util: 29.7.0
       natural-compare: 1.4.0
       pretty-format: 29.7.0
-      semver: 7.6.0
+      semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
 
@@ -21207,12 +21176,6 @@ snapshots:
     dependencies:
       minipass: 3.3.6
 
-  minipass@2.9.0:
-    dependencies:
-      safe-buffer: 5.2.1
-      yallist: 3.1.1
-    optional: true
-
   minipass@3.3.6:
     dependencies:
       yallist: 4.0.0
@@ -21222,11 +21185,6 @@ snapshots:
   minipass@7.0.4: {}
 
   minipass@7.1.2: {}
-
-  minizlib@1.3.3:
-    dependencies:
-      minipass: 2.9.0
-    optional: true
 
   minizlib@2.1.2:
     dependencies:
@@ -21565,10 +21523,10 @@ snapshots:
       set-blocking: 2.0.0
     optional: true
 
-  nsfwjs@2.4.2(@tensorflow/tfjs@4.4.0(encoding@0.1.13)(seedrandom@3.0.5)):
+  nsfwjs@2.4.2(@tensorflow/tfjs@4.21.0(encoding@0.1.13)(seedrandom@3.0.5)):
     dependencies:
       '@nsfw-filter/gif-frames': 1.0.2
-      '@tensorflow/tfjs': 4.4.0(encoding@0.1.13)(seedrandom@3.0.5)
+      '@tensorflow/tfjs': 4.21.0(encoding@0.1.13)(seedrandom@3.0.5)
 
   nth-check@2.1.1:
     dependencies:
@@ -22975,7 +22933,7 @@ snapshots:
     dependencies:
       '@hapi/hoek': 11.0.4
       '@hapi/wreck': 18.0.1
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       joi: 17.11.0
     transitivePeerDependencies:
       - supports-color
@@ -23200,7 +23158,7 @@ snapshots:
     dependencies:
       internal-slot: 1.0.5
 
-  storybook-addon-misskey-theme@https://codeload.github.com/misskey-dev/storybook-addon-misskey-theme/tar.gz/cf583db098365b2ccc81a82f63ca9c93bc32b640(@storybook/blocks@8.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/components@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/core-events@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/manager-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/preview-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/theming@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/types@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  storybook-addon-misskey-theme@git+https://git@github.com:misskey-dev/storybook-addon-misskey-theme.git#cf583db098365b2ccc81a82f63ca9c93bc32b640(@storybook/blocks@8.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/components@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/core-events@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/manager-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/preview-api@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/theming@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(@storybook/types@8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@storybook/blocks': 8.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4))
       '@storybook/components': 8.3.4(storybook@8.3.4(bufferutil@4.0.8)(utf-8-validate@6.0.4))
@@ -23416,17 +23374,6 @@ snapshots:
       b4a: 1.6.4
       fast-fifo: 1.3.0
       streamx: 2.15.0
-
-  tar@4.4.19:
-    dependencies:
-      chownr: 1.1.4
-      fs-minipass: 1.2.7
-      minipass: 2.9.0
-      minizlib: 1.3.3
-      mkdirp: 0.5.6
-      safe-buffer: 5.2.1
-      yallist: 3.1.1
-    optional: true
 
   tar@6.2.1:
     dependencies:
@@ -23935,7 +23882,7 @@ snapshots:
   vite-node@1.6.0(@types/node@20.14.12)(sass@1.79.3)(terser@5.33.0):
     dependencies:
       cac: 6.7.14
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       pathe: 1.1.2
       picocolors: 1.0.1
       vite: 5.4.8(@types/node@20.14.12)(sass@1.79.3)(terser@5.33.0)
@@ -23953,7 +23900,7 @@ snapshots:
   vite-node@1.6.0(@types/node@20.14.12)(sass@1.79.4)(terser@5.33.0):
     dependencies:
       cac: 6.7.14
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       pathe: 1.1.2
       picocolors: 1.0.1
       vite: 5.4.8(@types/node@20.14.12)(sass@1.79.4)(terser@5.33.0)
@@ -24132,7 +24079,7 @@ snapshots:
 
   vue-eslint-parser@9.4.3(eslint@9.11.0):
     dependencies:
-      debug: 4.3.5(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@8.1.1)
       eslint: 9.11.0
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
