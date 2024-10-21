@@ -126,7 +126,7 @@ export const meta = {
 		},
 
 		containsINMWords: {
-			message: 'Cannot post because it contains INM words.',
+			message: 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.',
 			code: 'CONTAINS_INM_WORDS',
 			id: '1145141919810',
 		},
