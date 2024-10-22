@@ -283,13 +283,12 @@ export class NoteCreateService implements OnApplicationShutdown {
 		}
 
 		if (hasINMWords) {
-			if (await this.roleService.isModerator){}
-			else{
-			this.usersRepository.update(user.id, {
-				isSuspended:true,
-			});
-			throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');	
-		}
+			if (!(await this.roleService.isModerator(user as MiUser))) {
+				this.usersRepository.update(user.id, {
+					isSuspended:true,
+				});
+				throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');	
+			}
 	    }
 		const inSilencedInstance = this.utilityService.isSilencedHost(this.meta.silencedHosts, user.host);
 
