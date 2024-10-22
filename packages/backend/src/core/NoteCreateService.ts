@@ -57,6 +57,7 @@ import { isReply } from '@/misc/is-reply.js';
 import { trackPromise } from '@/misc/promise-tracker.js';
 import { IdentifiableError } from '@/misc/identifiable-error.js';
 import { CollapsedQueue } from '@/misc/collapsed-queue.js';
+import { ModerationLogService } from '@/core/ModerationLogService.js';
 import { UserSuspendService } from '@/core/UserSuspendService.js';
 import type {FollowRequestsRepository} from '@/models/_.js';
 import { Endpoint } from '@/server/api/endpoint-base.js';
@@ -282,12 +283,14 @@ export class NoteCreateService implements OnApplicationShutdown {
 		}
 
 		if (hasINMWords) {
+			if (await this.roleService.isModerator){}
+			else{
 			this.usersRepository.update(user.id, {
 				isSuspended:true,
 			});
 			throw new IdentifiableError('114514-1919-810-364364', 'Since you seem to know about Inmu, I\'ll add it to the Inmu list.');	
 		}
-
+	    }
 		const inSilencedInstance = this.utilityService.isSilencedHost(this.meta.silencedHosts, user.host);
 
 		if (data.visibility === 'public' && inSilencedInstance && user.host !== null) {
