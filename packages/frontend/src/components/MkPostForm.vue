@@ -115,6 +115,7 @@ import { extractMentions } from '@/scripts/extract-mentions.js';
 import { formatTimeString } from '@/scripts/format-time-string.js';
 import { Autocomplete } from '@/scripts/autocomplete.js';
 import * as os from '@/os.js';
+import * as sound from '@/scripts/sound.js';
 import { misskeyApi } from '@/scripts/misskey-api.js';
 import { selectFiles } from '@/scripts/select-file.js';
 import { defaultStore, notePostInterruptors, postFormActions } from '@/store.js';
@@ -885,6 +886,9 @@ async function post(ev?: MouseEvent) {
 		});
 	}).catch(err => {
 		posting.value = false;
+		if ((err as any).id === '1145141919810') {
+			sound.playMisskeySfx('inmu');
+		}
 		os.alert({
 			type: 'error',
 			text: err.message + '\n' + (err as any).id,

@@ -59,6 +59,7 @@ export const soundsTypes = [
 	'syuilo/kick',
 	'syuilo/snare',
 	'syuilo/queue-jammed',
+	'syuilo/ikisugi',
 	'aisha/1',
 	'aisha/2',
 	'aisha/3',
@@ -76,6 +77,7 @@ export const operationTypes = [
 	'note',
 	'notification',
 	'reaction',
+	'inmu'
 ] as const;
 
 /** サウンドの種類 */

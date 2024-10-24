@@ -124,7 +124,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	reactions: {
 		where: 'account',
-		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮'],
+		default: ['👍', '❤️', '🤓', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮'],
 	},
 	pinnedEmojis: {
 		where: 'account',
@@ -497,6 +497,10 @@ export const defaultStore = markRaw(new Storage('base', {
 		where: 'device',
 		default: { type: 'syuilo/bubble2', volume: 1 } as SoundStore,
 	},
+	sound_inmu: {
+		where: 'device',
+		default: { type: 'syuilo/ikisugi', volume: 11.4514 } as SoundStore,
+	}
 }));
 
 // TODO: 他のタブと永続化されたstateを同期
